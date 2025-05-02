@@ -1,0 +1,86 @@
+@import '../css/variable';
+
+.faq-banner{
+    background: url(../images/faq_banner.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.faq{
+    padding: 50px 0;
+
+    .title{
+        h6{
+            font-size: 24px;
+            color: $primary-color;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-style: $font-2;
+        }
+        h2{
+            font-size: 40px;
+            color: $dark-text;
+            font-family: $font;
+            margin-bottom: 20px;
+            font-weight: $font-bold;
+        }
+    }
+
+    .faq-form-wrapper{
+        background-color: $primary-color;
+        padding: 20px;
+        border-radius: 16px;
+        box-shadow: 0px -3px 60px 0px rgba(0, 0, 0, 0.1);
+
+        .title{
+            h6{
+                font-size: 34px;
+                color: $white;
+                font-family: $font-2;
+                margin-bottom: 20px;
+            }
+            p{
+                color: $white;
+                font-size: 18px;
+            }
+        }
+
+        .form-wrapper{
+            @include form;
+
+            .wa-btn {
+                background-color: $red;
+            }
+        }
+    }
+
+    .accordion{
+        transition: 0.3s all ease;
+        padding-bottom: 10px;
+        .accordion-item{
+            border: 0;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            border-radius: 13px;
+            margin-bottom: 20px;
+            .accordion-header{
+                .accordion-button{
+                    font-weight: $font-bold;
+                    color: $primary-color;
+                    text-decoration: none;
+                    border: 0;
+                    font-size: 18px;
+                    background: none;
+                    text-align: left;
+                    box-shadow: none;
+                }
+            }
+            .accordion-body{
+                color: $text-color;
+                a{
+                    text-decoration: none;
+                    color: $blue;
+                }
+            }
+        }
+    }
+}

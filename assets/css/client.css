@@ -1,0 +1,77 @@
+.client-banner {
+  background: url(../images/services_banner.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 40px 0;
+  height: 450px;
+}
+.client-banner::before {
+  content: "";
+  background-color: #024f75;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.client-banner .banner-title {
+  position: relative;
+  margin-top: 120px;
+  text-align: center;
+}
+.client-banner .banner-title h4 {
+  font-size: 60px;
+  color: #f2f2f2;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+}
+@media screen and (max-width: 767px) {
+  .client-banner {
+    height: 300px;
+  }
+  .client-banner .banner-title {
+    margin-top: 80px;
+  }
+  .client-banner .banner-title h4 {
+    font-size: 40px;
+  }
+}
+
+.client {
+  padding: 60px 0;
+  background-color: #E7FBF9;
+}
+.client .title {
+  margin-bottom: 40px;
+  position: relative;
+}
+.client .title::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  height: 3px;
+  width: 20%;
+  background-color: #A7C731;
+  border-radius: 50px;
+}
+.client .title h4 {
+  font-size: 40px;
+  color: #3E3D4B;
+  font-family: "Comfortaa", sans-serif;
+  margin-bottom: 20px;
+}
+.client .card {
+  margin: 15px 0;
+  padding: 10px;
+  height: 150px;
+  text-align: center;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+  border: 0;
+}
+.client .card .image-wrapper {
+  margin: auto;
+  overflow: hidden;
+}/*# sourceMappingURL=client.css.map */

@@ -1,0 +1,252 @@
+
+ @import '_variable.scss';
+
+.banner{
+    background: url(../images/banner-vector.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+
+    .image-bg{
+        background-color: transparent;
+        background-image: linear-gradient(180deg, $blue 0%, $white 100%);
+        width: 100%;
+        height: 100%;
+        border-bottom-left-radius: 120px;
+
+        .image-wrapper{
+            margin-left: 30px;
+            border-bottom-left-radius: 100px;
+            overflow: hidden;
+        }
+    }
+
+    .title{
+        margin: 0 50px;
+        h6{
+            font-size: 20px;
+            color: $primary-color;
+        }
+        h2{
+            font-size: 70px;
+            color: $dark-text;
+            font-family: $font-2;
+        }
+        p{
+            color: $text-color;
+            font-size: 18px;
+        }
+    }
+
+    .btn-wrapper{
+        margin-top: 40px;
+        .primary-btn{
+            @include primary-btn;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 30px 0;
+        .title{
+            margin: 0;
+            h2{
+                font-size: 30px;
+            }
+        }
+
+        .image-bg{
+            margin-top: 20px;
+        }
+    }
+}
+
+.service{
+    padding: 60px 0;
+    .card{
+        padding: 30px 20px 20px;
+        background-color: #cdedfb;
+        border: 1px solid $primary-color;
+        border-radius: 20px;
+        text-align: center;
+        .image-wrapper{
+            background-color: $white;
+            padding: 20px;
+            border-radius: 100%;
+            border: 1px solid $primary-color;
+            width: 100px;
+            margin: auto;
+            img{
+                height: 60px;
+                width: 60px;
+            }
+        }
+
+        .card-body{
+            .title{
+                margin: auto;
+                h6{
+                    font-size: 20px;
+                    font-family: $font-2;
+                }
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .card-2{
+        background-color: $primary-color;
+        color: $white;
+    }
+
+    
+    @media screen and (max-width: 767px) {
+        padding: 30px 0;
+
+        .card{
+            margin: 10px 0;
+        }
+    }
+}
+.about{
+    padding: 60px 0;
+    background: url(../images/about-img.webp);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+    overflow: hidden;
+    .title{
+        h6{
+            font-size: 24px;
+            color: $primary-color;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+            color: $dark-text;
+            font-family: $font-2;
+            margin-bottom: 20px;
+        }
+        p{
+            color: $text-color;
+            font-size: 18px;
+        }
+    }
+    .btn-wrapper{
+        margin-top: 20px;
+        .primary-btn{
+            @include red-btn;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        background: $white;
+        .title{
+            h2{
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+.associates{
+    padding: 60px 0;
+    background-color: #E7FBF9;
+    .swiper {
+        height: 150px;
+        .image-wrapper{
+            margin: 20px;
+        }
+      }
+      .title{
+        text-align: center;
+        margin-bottom: 30px;
+        h6{
+            font-size: 40px;
+            color: $dark-text;
+            font-family: $font-2;
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .swiper{
+            .image-wrapper{
+                overflow: hidden;
+            }
+        }   
+    }
+}
+.clients{
+    padding: 60px 0;
+    .swiper {
+        height: 150px;
+        .image-wrapper{
+            margin: 20px;
+        }
+      }
+      .title{
+        text-align: center;
+        margin-bottom: 30px;
+        h6{
+            font-size: 40px;
+            color: $dark-text;
+            font-family: $font-2;
+            margin-bottom: 20px;
+        }
+    }
+}
+.map{
+    background: url(../images/pharmacist-checking-a-medicine-in-pharmacy.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    padding: 40px 0;
+
+    &::before{
+        content: '';
+        background-color: $primary-color;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .map-inner{
+        position: relative;
+
+        .map-form-wrapper{
+            background-color: $white;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0px -3px 60px 0px rgba(0, 0, 0, 0.1);
+
+            .title{
+                h6{
+                    font-size: 34px;
+                    color: $dark-text;
+                    font-family: $font-2;
+                    margin-bottom: 20px;
+                }
+                p{
+                    color: $text-color;
+                    font-size: 18px;
+                }
+            }
+
+            .form-wrapper{
+                @include form;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .map-form-wrapper{
+            margin-bottom: 30px;
+        }
+    }
+}

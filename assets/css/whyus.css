@@ -1,0 +1,109 @@
+.why-us-banner {
+  background: url(../images/pharmacist-checking-a-medicine-in-pharmacy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 40px 0;
+  height: 500px;
+}
+.why-us-banner::before {
+  content: "";
+  background-color: #024f75;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.why-us-banner .banner-title {
+  position: relative;
+  margin-top: 120px;
+  text-align: center;
+}
+.why-us-banner .banner-title h4 {
+  font-size: 80px;
+  color: #f2f2f2;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+}
+.why-us-banner .banner-title h6 {
+  font-size: 30px;
+  color: #f2f2f2;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  max-width: 700px;
+  margin: auto;
+}
+@media screen and (max-width: 767px) {
+  .why-us-banner {
+    height: 300px;
+  }
+  .why-us-banner .banner-title {
+    margin-top: 50px;
+  }
+  .why-us-banner .banner-title h4 {
+    font-size: 40px;
+  }
+  .why-us-banner .banner-title h6 {
+    font-size: 24px;
+  }
+}
+
+.why-us {
+  padding: 40px 0;
+}
+.why-us .title {
+  margin-bottom: 40px;
+  position: relative;
+}
+.why-us .title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 3px;
+  width: 20%;
+  background-color: #A7C731;
+  border-radius: 50px;
+}
+.why-us .title h4 {
+  font-size: 40px;
+  color: #3E3D4B;
+  font-family: "Comfortaa", sans-serif;
+  margin-bottom: 20px;
+}
+.why-us .title h6 {
+  color: #6c6c7a;
+}
+@media screen and (max-width: 767px) {
+  .why-us .title::before {
+    top: 30%;
+  }
+}
+.why-us .card {
+  padding: 30px 20px 20px;
+  background-color: #cdedfb;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+  border: 0;
+  border-radius: 20px;
+  text-align: center;
+  height: 300px;
+  margin-bottom: 20px;
+  background: transparent;
+}
+.why-us .card .image-wrapper {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto 20px;
+}
+.why-us .card .content h6 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #3E3D4B;
+  font-weight: 600;
+}
+@media screen and (max-width: 767px) {
+  .why-us .card {
+    height: auto;
+  }
+}/*# sourceMappingURL=whyus.css.map */

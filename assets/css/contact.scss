@@ -1,0 +1,147 @@
+@import '../css/variable';
+
+.contact-banner{
+        background: url(../images/contact-banner.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        padding: 40px 0;
+        height: 500px;
+    
+        &::before{
+            content: '';
+            background-color: $primary-color;
+            opacity: 0.6;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+    
+        .banner-title{
+            position: relative;
+            margin-top: 120px;
+            text-align: center;
+    
+            h4{
+                font-size: 80px;
+                color: $white;
+                font-family: $font-2;
+                font-weight: $font-bold;
+            }
+    
+            h6{
+                font-size: 30px;
+                color: $white;
+                font-family: $font-2;
+                font-weight: $font-bold;
+                max-width: 700px;
+                margin: auto;
+            }
+        }
+
+    @media screen and (max-width: 767px) {
+        height: 300px;
+        .banner-title{
+            margin-top: 60px;
+            h4{
+                font-size: 30px;
+            }
+            h6{
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+.contact-us{
+    padding: 50px 0;
+    .title{
+        border-bottom: 1px solid #6c6c7a54;
+        
+        h6{
+            font-size: 24px;
+            color: $primary-color;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-style: $font-2;
+        }
+        h2{
+            font-size: 40px;
+            color: $dark-text;
+            font-family: $font;
+            margin-bottom: 20px;
+            font-weight: $font-bold;
+        }
+    }
+
+    .contact-wrapper{
+        margin: 20px 0;
+        .content{
+            .icon-wrapper{
+                background-color: $secondary-color;
+                border-radius: 100%;
+
+                i{
+                    height: 60px;
+                    width: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                   &::before{
+                        font-size: 28px;
+                        color: $white;
+                   }
+                }
+            }
+        }
+
+        h6{
+            font-size: 20px;
+            font-weight: $font-bold;
+            color: $dark-text;
+        }
+
+        p,a{
+            color: $text-color;
+            text-decoration: none;
+        }
+    }
+
+    .contact-form-wrapper{
+        background-color: $primary-color;
+        margin-bottom: 30px;
+        padding: 20px;
+        border-radius: 16px;
+        box-shadow: 0px -3px 60px 0px rgba(0, 0, 0, 0.1);
+
+        .title{
+            h6{
+                font-size: 34px;
+                color: $white;
+                font-family: $font-2;
+                margin-bottom: 20px;
+            }
+            p{
+                color: $white;
+                font-size: 18px;
+            }
+        }
+
+        @include form;
+
+        .wa-btn {
+            background-color: $red;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .title{
+            h2{
+                font-size: 30px;
+            }
+        }
+    }
+}

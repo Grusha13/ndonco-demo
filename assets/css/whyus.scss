@@ -1,0 +1,123 @@
+@import 'variable.scss';
+
+.why-us-banner{
+    background: url(../images/pharmacist-checking-a-medicine-in-pharmacy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 40px 0;
+    height: 500px;
+
+    &::before{
+        content: '';
+        background-color: $primary-color;
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .banner-title{
+        position: relative;
+        margin-top: 120px;
+        text-align: center;
+
+        h4{
+            font-size: 80px;
+            color: $white;
+            font-family: $font-2;
+            font-weight: $font-bold;
+        }
+
+        h6{
+            font-size: 30px;
+            color: $white;
+            font-family: $font-2;
+            font-weight: $font-bold;
+            max-width: 700px;
+            margin: auto;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        height: 300px;
+        .banner-title{
+            margin-top: 50px;
+            h4{
+                font-size: 40px;
+            }
+            h6{
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.why-us{
+    padding: 40px 0;
+
+    .title{
+        margin-bottom: 40px;
+        position: relative;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            height: 3px;
+            width: 20%;
+            background-color: $secondary-color;
+            border-radius: 50px;
+        }
+        h4{
+            font-size: 40px;
+            color: $dark-text;
+            font-family: "Comfortaa", sans-serif;
+            margin-bottom: 20px;
+        }
+
+        h6{
+            color: $text-color;
+        }
+
+        @media screen and (max-width: 767px) {
+            &::before{
+                top: 30%;
+            }
+        }
+    }
+
+    .card{
+        padding: 30px 20px 20px;
+        background-color: #cdedfb;
+        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+        border: 0;
+        border-radius: 20px;
+        text-align: center;
+        height: 300px;
+        margin-bottom: 20px;
+        background: transparent;
+        .image-wrapper{
+            height: 50px;
+            width: 50px;
+            margin: 0 auto 20px;
+        }
+
+        .content{
+            h6{
+                font-size: 20px;
+                font-weight: $font-medium;
+                color: $dark-text;
+                font-weight: $font-semibold;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .card{
+            height: auto;
+        }
+    }
+}

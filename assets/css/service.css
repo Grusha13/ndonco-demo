@@ -1,0 +1,230 @@
+.services-banner {
+  background: url(../images/services_banner.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 40px 0;
+  height: 450px;
+}
+.services-banner::before {
+  content: "";
+  background-color: #024f75;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.services-banner .banner-title {
+  position: relative;
+  margin-top: 120px;
+  text-align: center;
+}
+.services-banner .banner-title h4 {
+  font-size: 60px;
+  color: #f2f2f2;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+}
+@media screen and (max-width: 767px) {
+  .services-banner {
+    height: 300px;
+  }
+  .services-banner .banner-title {
+    margin-top: 80px;
+  }
+  .services-banner .banner-title h4 {
+    font-size: 30px;
+  }
+}
+
+.service-content {
+  padding-top: 60px;
+}
+.service-content .title {
+  margin-bottom: 40px;
+  position: relative;
+}
+.service-content .title::before {
+  content: "";
+  position: absolute;
+  top: 35%;
+  height: 3px;
+  width: 20%;
+  background-color: #A7C731;
+  border-radius: 50px;
+}
+.service-content .title h5 {
+  font-family: "Public Sans", sans-serif;
+  color: #024f75;
+}
+.service-content .title h4 {
+  font-size: 40px;
+  color: #3E3D4B;
+  font-family: "Comfortaa", sans-serif;
+  margin-bottom: 100px;
+}
+.service-content .title h6 {
+  color: #6c6c7a;
+  margin-top: 30px;
+}
+.service-content .service-inner-content {
+  background: url(../images/pharmacy-plant.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+}
+.service-content .service-inner-content::before {
+  content: "";
+  background-color: #024f75;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.service-content .service-inner-content .card {
+  border: 1px solid #6c6c7a;
+  background-color: transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+}
+.service-content .service-inner-content .card::before {
+  content: "";
+  background-color: #024f75;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.service-content .service-inner-content .card .card-body {
+  position: relative;
+  color: #f2f2f2;
+  text-align: center;
+}
+.service-content .service-inner-content .card .card-body h6 {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  height: 60px;
+}
+.service-content .service-inner-content .card .card-body p {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  .service-content .service-inner-content .card {
+    height: auto;
+    margin: 10px 0;
+  }
+  .service-content .service-inner-content .card .card-body h6 {
+    height: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .service-content .title h4 {
+    font-size: 32px;
+  }
+  .service-content .title::before {
+    top: 30%;
+  }
+  .service-content .card {
+    margin: 10px 0;
+  }
+}
+
+.patient-support-service-content {
+  padding: 60px 0;
+}
+.patient-support-service-content .title {
+  position: relative;
+}
+.patient-support-service-content .title::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  height: 3px;
+  width: 20%;
+  background-color: #A7C731;
+  border-radius: 50px;
+}
+.patient-support-service-content .title h4 {
+  font-size: 40px;
+  color: #3E3D4B;
+  font-family: "Comfortaa", sans-serif;
+  margin-bottom: 30px;
+}
+.patient-support-service-content .content {
+  color: #024f75;
+}
+.patient-support-service-content .content h6 {
+  font-weight: 700;
+}
+@media screen and (max-width: 767px) {
+  .patient-support-service-content .title h4 {
+    font-size: 32px;
+  }
+}
+
+.advantages {
+  padding: 40px 0;
+}
+.advantages .advantage-title {
+  position: relative;
+  margin-bottom: 50px;
+}
+.advantages .advantage-title::before {
+  content: "";
+  position: absolute;
+  top: 45px;
+  height: 3px;
+  width: 20%;
+  background-color: #A7C731;
+  border-radius: 50px;
+}
+.advantages .advantage-title h6 {
+  font-size: 30px;
+  color: #3E3D4B;
+  font-family: "Comfortaa", sans-serif;
+}
+.advantages .image-wrapper {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.advantages .content-wrapper {
+  margin-bottom: 30px;
+}
+.advantages .content-wrapper h6 {
+  font-size: 24px;
+  color: #3E3D4B;
+  font-family: "Comfortaa", sans-serif;
+  position: relative;
+  margin-bottom: 20px;
+}
+.advantages .content-wrapper h6::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  height: 3px;
+  width: 20%;
+  background-color: #A7C731;
+  border-radius: 50px;
+}
+@media screen and (max-width: 767px) {
+  .advantages {
+    overflow: hidden;
+  }
+  .advantages .advantage-title::before {
+    top: 100%;
+  }
+}/*# sourceMappingURL=service.css.map */

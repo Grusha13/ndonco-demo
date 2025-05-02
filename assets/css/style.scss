@@ -1,0 +1,207 @@
+@import 'variable.scss';
+@import 'home.scss';
+@import 'whyus.scss';
+@import 'contact.scss';
+@import 'faq.scss';
+@import 'service.scss';
+@import 'client.scss';
+
+body{
+    background-color: #fafafa;
+    font-family: $font;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.btn-floating{
+    position: fixed;
+    bottom: 90px;
+    right: 50px;
+    background-color: $dark-red;
+    padding: 15px 20px;
+    border-radius: 100%;
+    z-index: 9999;
+    animation: vibrate 0.5s linear infinite;
+
+    .fas{
+        color: $white;
+    }
+
+    @keyframes vibrate {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-2px); }
+        50% { transform: translateX(2px); }
+        75% { transform: translateX(-2px); }
+        100% { transform: translateX(0); }
+    }
+
+    @media screen and (max-width: 767px) {
+        right: 30px;
+    }
+}
+.wa-wrapper{
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    background-color: #25D366;
+    padding: 14px 16px 13px;
+    border-radius: 100%;
+    z-index: 999;
+
+    i{
+        color: $white;
+        font-size: 28px;
+    }
+    @media screen and (max-width: 767px) {
+        right: 30px;
+    }
+}
+header{
+    .navbar{
+        padding: 10px 0;
+        .navbar-brand{
+            overflow: hidden;
+            img{
+                height: 90px;
+                width: 100%;
+            }
+        }
+        .navbar-nav{
+            .nav-item{
+                margin: 0 10px;
+                position: relative;
+                .nav-link{
+                    font-size: 18px;
+                    color: $primary-color;
+                    font-weight: $font-medium;
+
+                    &::before{
+                        content:'';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        background-color: $secondary-color;
+                        height: 2px;
+                        width: 0;
+                        transition: .3s all ease;
+                    }
+
+                    &:hover, &.active{
+                       &::before{
+                         width: 100%;
+                       }
+                    }
+                }
+            }
+
+            .dropdown-menu {
+                top: 100%;
+                border: 0;
+                background-color: $primary-color;
+                .dropdown-item{
+                    color: $white;
+                    font-family: $font;
+
+                    &:hover{
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+
+        .contact-no{
+            .fa-phone{
+                background-color: $secondary-color;
+                padding: 15px;
+                border-radius: 100%;
+
+                &::before{
+                    color: $white;
+                }
+            }
+
+            h6{
+                text-transform: uppercase;
+                color: $text-color;
+                letter-spacing: 0.8px;
+                margin-bottom: 0;
+                font-weight: $font-medium;
+            }
+
+            a{
+                font-size: 20px;
+                color: $primary-color;
+                font-weight: $font-bold;
+            }
+        }
+    }
+
+    @media screen and (max-width: 990px) {
+        .navbar-toggler-icon{
+            background-image: none !important;
+            transition: .5s ease all;
+
+            i{
+                color: $primary-color;
+                font-size: 30px;
+            }
+
+            .fa-bars{
+                transition: .3s ease-in-out;
+            }
+
+            .fa-xmark{
+                display: none;
+                transition: .3s ease-in-out;
+            }
+        }
+
+        .navbar{
+            position: relative;
+        }
+
+        .navbar-collapse{
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            left: 0;
+            background-color: $white;
+            z-index: 9999;
+        }
+    }
+}
+
+footer{
+    background-color: $primary-color;
+    padding: 60px 0 20px;
+    color: $white;
+
+    .image-wrapper{
+        img{
+            height: 120px;
+        width: 120px;
+        }
+    }
+    .menu-wrapper{
+        list-style: none;
+        padding: 0;
+        h6{
+            font-weight: $font-bold;
+        }
+            a{
+                color: $white;
+                text-decoration: none;
+            }
+    }
+
+    .copyright-section{
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid $white;
+
+        h6{
+            margin-bottom: 0;
+            text-align: center;
+        }
+    }
+}

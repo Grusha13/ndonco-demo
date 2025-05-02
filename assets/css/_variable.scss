@@ -1,0 +1,85 @@
+$font: 'Public Sans', sans-serif;
+$font-2: 'Comfortaa', sans-serif;
+
+$font-thin: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+$primary-color:     #024f75; 
+$secondary-color:   #A7C731;
+$green:             #5a6a19;
+$blue:              #05a4e4;
+$orange:            #EFAF49;
+$red:               #eb605e;
+$dark-red:          #912928;
+$light-blue:        #78ccf0;
+$dark-text:         #3E3D4B;
+$text-color:        #6c6c7a;
+$white:             #f2f2f2;
+
+
+@mixin primary-btn{
+    background: transparent;
+    border: 2px solid $secondary-color;
+    color: $green;
+    text-decoration: none;
+    padding: 10px 18px 10px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    text-transform: capitalize;
+    transition: .2s all ease;
+
+    i{
+        transition: .2s all ease;
+        padding-top: 10px;
+    }
+
+    &:hover{
+        background-color: $secondary-color;
+        border: 2px solid $secondary-color;
+        color: $white;
+
+        i{
+            transform: translateX(5px);
+        }
+    }
+}
+
+@mixin red-btn{
+    background: transparent;
+    color: $dark-red;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: $font-bold;
+    text-transform: capitalize;
+    transition: .2s all ease;
+    font-family: $font-2;
+
+    i{
+        transition: .2s all ease;
+        padding-top: 10px;
+    }
+
+    &:hover{
+        i{
+            transform: translateX(5px);
+        }
+    }
+}
+
+
+@mixin form{
+    input, textarea{
+        background-color: #e3f1f8;
+        border: 1px solid $light-blue
+    }
+
+    .wa-btn{
+        background-color: $primary-color;
+        color: $white;
+    }
+}
+
+

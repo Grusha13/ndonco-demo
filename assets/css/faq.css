@@ -1,0 +1,78 @@
+.faq-banner {
+  background: url(../images/faq_banner.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.faq {
+  padding: 50px 0;
+}
+.faq .title h6 {
+  font-size: 24px;
+  color: #024f75;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-style: "Comfortaa", sans-serif;
+}
+.faq .title h2 {
+  font-size: 40px;
+  color: #3E3D4B;
+  font-family: "Public Sans", sans-serif;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.faq .faq-form-wrapper {
+  background-color: #024f75;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px -3px 60px 0px rgba(0, 0, 0, 0.1);
+}
+.faq .faq-form-wrapper .title h6 {
+  font-size: 34px;
+  color: #f2f2f2;
+  font-family: "Comfortaa", sans-serif;
+  margin-bottom: 20px;
+}
+.faq .faq-form-wrapper .title p {
+  color: #f2f2f2;
+  font-size: 18px;
+}
+.faq .faq-form-wrapper .form-wrapper input, .faq .faq-form-wrapper .form-wrapper textarea {
+  background-color: #e3f1f8;
+  border: 1px solid #78ccf0;
+}
+.faq .faq-form-wrapper .form-wrapper .wa-btn {
+  background-color: #024f75;
+  color: #f2f2f2;
+}
+.faq .faq-form-wrapper .form-wrapper .wa-btn {
+  background-color: #eb605e;
+}
+.faq .accordion {
+  transition: 0.3s all ease;
+  padding-bottom: 10px;
+}
+.faq .accordion .accordion-item {
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 13px;
+  margin-bottom: 20px;
+}
+.faq .accordion .accordion-item .accordion-header .accordion-button {
+  font-weight: 700;
+  color: #024f75;
+  text-decoration: none;
+  border: 0;
+  font-size: 18px;
+  background: none;
+  text-align: left;
+  box-shadow: none;
+}
+.faq .accordion .accordion-item .accordion-body {
+  color: #6c6c7a;
+}
+.faq .accordion .accordion-item .accordion-body a {
+  text-decoration: none;
+  color: #05a4e4;
+}/*# sourceMappingURL=faq.css.map */
